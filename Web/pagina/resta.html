@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        
+        <title>Resta</title>
+        
+        <script type="text/javascript" charset="utf-8">
+            function resta()
+            {
+                var n1=document.getElementById('num1');
+                var n2=document.getElementById('num2');
+                resta=n1.value-n2.value;
+                
+                resta=parseInt(n1.value)-parseInt(n2.value);
+                
+                alert('La resta es: '+ resta);
+                
+                return false;
+            }
+        </script>
+        
+      
+    </head>
+      <body>
+          <form action="" method="POST">
+          Numero 1 <input type="text" name=num1 id="num1"><br>
+          Numero 2 <input type="text" name=num2 id="num2"><br>
+          <input type="submit" name="enviar" id="enviar" value="aceptar" onclick="resta();" />
+          
+              
+          </form>
+          
+      </body>
+</html>

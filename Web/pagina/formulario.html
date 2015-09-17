@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Pagina ejemplop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      
+      
+       <form name="sumar" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)">
+      
+      
+      
+        <h2 class="form-signin-heading">Ejemplo</h2>
+        
+        <label for="number" class="sr-only">Numero 1:</label>
+        <input type="number" id="valor1" class="form-control" placeholder="Ingrese un numero" required autofocus>
+        
+        <label for="number" class="sr-only">Numero 2:</label>
+        <input type="number" id="valor2" class="form-control" placeholder="Ingrese un numero" required>
+        
+        <label for="number" class="sr-only">Resultado:</label>
+        <input type="number" id="resultado" class="form-control" placeholder="El resultado es" required>
+       
+       
+       
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Calcular</button>
+            
+            <output name="resultado" for="valor1 valor2"></output>
+            
+            
+        </form> 
+        
+     
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
